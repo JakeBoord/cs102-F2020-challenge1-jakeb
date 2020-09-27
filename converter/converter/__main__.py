@@ -17,7 +17,9 @@ def main(
     # perform the conversion of the temperature from one unit to another unit
     converted_temperature = convert.convert_temperature(temperature, from_unit, to_unit)
     # display the original temperature and then the converted temperature, always using units
-    typer.echo(f"{temperature:.2f} degrees in {from_unit.value} is {converted_temperature:.2f} degrees in {to_unit.value}")
+    typer.echo(
+        f"{temperature:.2f} degrees in {from_unit.value} is {converted_temperature:.2f} degrees in {to_unit.value}"
+    )
 
 
 if __name__ == "__main__":
